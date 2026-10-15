@@ -28,38 +28,44 @@ This project demonstrates how a frontend website can be built and deployed using
 ## 🔄 DevOps Workflow
 
 ```text
-Developer
-    |
-    v
-VS Code
-    |
-    v
-Git
-    |
-    v
-GitHub Repository
-    |
-    v
-Jenkins Pipeline
-    |
-    +--> Checkout Source Code
-    |
-    +--> Install Dependencies (npm)
-    |
-    +--> Build Website (Vite)
-    |
-    v
-Production Files (dist/)
-    |
-    v
-Transfer Files to AWS EC2 (SSH/SCP)
-    |
-    v
-Nginx Web Server
-    |
-    v
-Web Browser
+                 DEVELOPER
+                     |
+                     v
+                  VS CODE
+                     |
+                     v
+                    GIT
+                     |
+                     v
+              GITHUB REPOSITORY
+                     |
+                     v
+              JENKINS PIPELINE
+                     |
+          +----------+----------+
+          |          |          |
+          v          v          v
+       CHECKOUT   NPM INSTALL  VITE BUILD
+          |          |          |
+          +----------+----------+
+                     |
+                     v
+             PRODUCTION FILES
+                 (dist/)
+                     |
+                     v
+              SSH / SCP TRANSFER
+                     |
+                     v
+                AWS EC2
+                     |
+                     v
+               NGINX SERVER
+                     |
+                     v
+                WEB BROWSER
 ```
+
 
 ## ⚙️ How the Pipeline Works
 
