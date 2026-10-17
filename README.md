@@ -8,11 +8,6 @@ Yogiva is a yoga and wellness website designed to introduce users to yoga classe
 
 This project demonstrates how a frontend website can be built and deployed using DevOps tools and cloud infrastructure.
 
-## 🚀 Live Demo
-
-**Website:** http://52.201.255.244
-
-> Note: The website is hosted on an AWS EC2 instance. The public IP may change if the instance is stopped and restarted.
 
 ## 🛠️ Technologies Used
 
